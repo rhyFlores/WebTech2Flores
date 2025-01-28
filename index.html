@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .navbar .icons {
+            display: grid;
+            grid-template-columns: auto auto 130px auto;
+        }
+        .menu, .search{
+           margin-left: 80px;
+           margin-top: 15px;
+        }
+        .logo {
+            padding-left: 90px;
+        }
+        .cart-icon {
+            background-color: red;
+            text-align: center;
+        }
+        .cart {
+            margin-top: 6px;
+        }       
+        .ads {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 20px;
+            padding: 40px 80px;
+            text-align: center;
+        }
+        .ads img { 
+            width: 100%; 
+            height: 540px; 
+        }
+        section {
+            margin-left: 80px;
+        }
+        .title h3 {
+            margin: 25px 0 30px 0;
+            font-size: 2em;
+        }
+        .title span {
+            color: red;
+            font-style: italic;
+        }
+        .title a {
+            text-decoration: none;
+            font-size: 0.6em;
+            color: red;
+            font-weight: lighter;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin-bottom: 100px;
+            width: 95%;
+        }
+        .products .prod-card {
+            padding: 10px;
+            border: 1px solid #999696;
+            place-items: center;
+            height: 100%;
+            text-align: center;
+            align-content: end;          
+        }
+        .prod-card img {
+            width: 60%;
+            height: auto;
+            margin-bottom: 30px;
+        }        
+        section p {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        section a {
+            font-size: 1.2em;
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        section button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-weight: bold;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #999696;
+            color: #000000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="icons">
+            <img src="Resources/burger_icon.png" alt="menu" class="menu" height="40px" width="40px" />
+            <img src="Resources/WMLogo.png" alt="waltermart" class="logo" height="65px" width="auto" />
+            <img src="Resources/search_icon.png" alt="search" class="search" height="35px" />
+            <div class="cart-icon">
+                <img src="Resources/cart.png" alt="cart" class="cart" height="45px" />
+            </div>
+        </div>
+    </nav>
+
+    <main class="ads">
+        <img src="Resources/Ad 1.png" alt="ad1">
+        <img src="Resources/Ad 2.png" alt="ad2">
+        <img src="Resources/Ad 3.png" alt="ad3">
+    </main>
+
+    <section>
+        <div class="title">
+            <h3>What's <span>New</span> <a href="">View All</a></h3>
+        </div>
+        <div class="products">
+            <div class="prod-card">
+                <img src="Resources/Reese_s.png" alt="reese's" />
+                <p>Reese's Chocolate Peanut Butter Hearts King Size | 2.4oz</p>
+                <a href="">See Price</a>
+                <div class="btn">
+                    <button>+ Add</button>
+                </div>
+            </div>
+
+            <div class="prod-card">
+                <img src="Resources/kisses.png" alt="kisses1" />
+                <p>Hershey's Kisses Creamy & Choco Almond Assorted | 180g</p>
+                <a href="">See Price</a>
+                <div class="btn">
+                    <button>+ Add</button>
+                </div>
+            </div>
+
+            <div class="prod-card">
+                <img src="Resources/kisses_2.png" alt="kisses2" />
+                <p>Hershey's Kisses Creamy & Choco Almond Assorted | 81g</p>
+                <a href="">See Price</a>
+                <div class="btn">
+                    <button>+ Add</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 WalterMart Delivery</p>
+    </footer>
+</body>
+
+</html>
